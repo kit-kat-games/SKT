@@ -12,11 +12,14 @@ var but_savedata = save_data
 var but_loaddata = load_data
 
 var saved_data: Dictionary
-const SAVE_PATH = "user://savedata.json"
+const TREE_DATA_SAVE_PATH = "res://saved_tree_data.json"
+const SKILL_DATA_SAVE_PATH = "res://saved_skill_data"
+const SKILL_BRANCHES_SAVE_PATH = "res://saved_skill_branches"
+const DIR_ACCESS_PATH = "res://"
 
 
 func _ready() -> void:
-	load_data()
+	#load_data()
 	
 	if not tree.request_save_data.is_connected(save_data):
 		tree.request_save_data.connect(save_data)
@@ -27,7 +30,12 @@ func _ready() -> void:
 func save_data() -> void:
 	MessageLogger.log_process("Saving Tree Data")
 	saved_data.clear()
-
+	
+	# Testing something
+	var packed_scene = PackedScene.new()
+	packed_scene.pack(tree)
+	ResourceSaver.save(packed_scene, "res://my_scene.tscn")
+	
 	# Allow any nodes that need to organize their data before saving data occurs
 	tree.request_prepare_for_save.emit()
 	await get_tree().create_timer(0.5).timeout
@@ -73,7 +81,7 @@ func save_data() -> void:
 	saved_data.set("nodes", node_saved_data)
 	saved_data.set("system", system_saved_data)
 
-	var file = FileAccess.open(SAVE_PATH, FileAccess.WRITE)
+	var file = FileAccess.open(TREE_DATA_SAVE_PATH, FileAccess.WRITE)
 	file.store_string(FormatJSON(saved_data, 1))
 	file.close()
 
@@ -117,7 +125,7 @@ func load_data():
 	MessageLogger.log_process("Loading Tree Data")
 
 	# Open and read json file of save data
-	var file = FileAccess.open(SAVE_PATH, FileAccess.READ)
+	var file = FileAccess.open(TREE_DATA_SAVE_PATH, FileAccess.READ)
 	if file == null:
 		MessageLogger.log_issue("Save data does not exist at filepath.")
 		return
@@ -182,13 +190,12 @@ func save_and_get_path_of_skilldata(node: SkillNode) -> String:
 	if node == null:
 		return ""
 
-	var save_path = "user://saved_skill_data"
-	var dir = DirAccess.open("user://")
+	var dir = DirAccess.open(DIR_ACCESS_PATH)
 
-	if not dir.dir_exists(save_path):
-		dir.make_dir(save_path)
+	if not dir.dir_exists(SKILL_DATA_SAVE_PATH):
+		dir.make_dir(SKILL_DATA_SAVE_PATH)
 
-	var path = "user://saved_skill_data/" + node.name + ".tres"
+	var path = SKILL_DATA_SAVE_PATH + node.name + ".tres"
 	ResourceSaver.save(node.skill_data, path)
 	return path
 
@@ -197,13 +204,12 @@ func save_and_get_path_of_uc(branch: SkillBranch) -> String:
 	if branch == null:
 		return ""
 
-	var save_path = "user://saved_skill_branches"
-	var dir = DirAccess.open("user://")
+	var dir = DirAccess.open(DIR_ACCESS_PATH)
 
-	if not dir.dir_exists(save_path):
-		dir.make_dir(save_path)
+	if not dir.dir_exists(SKILL_BRANCHES_SAVE_PATH):
+		dir.make_dir(SKILL_BRANCHES_SAVE_PATH)
 
-	var path = "user://saved_skill_branches/" + branch.name + ".tres"
+	var path = SKILL_BRANCHES_SAVE_PATH + branch.name + ".tres"
 	ResourceSaver.save(branch.unlock_condition, path)
 	return path
 

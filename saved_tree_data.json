@@ -1,0 +1,25 @@
+{
+   "nodes": {
+     "SkillNode1": {
+       "skill_data_path": "res://saved_skill_dataSkillNode1.tres",
+       "position": "(-12.0, -12.0)",
+       "progression_tier": 0,
+       "previous_branches": [],
+       "result_branches": []
+     }
+   },
+   "system": {
+     "progression_tier_manager": {
+       "uses_tiers": true,
+       "current_tier": 3
+     },
+     "upgrade_cost_manager": {
+       "upgrade_type": 1,
+       "current_sp": 113
+     },
+     "grid_node_locker": {
+       "uses_lock": false,
+       "cell_size": 20
+     }
+   }
+ }

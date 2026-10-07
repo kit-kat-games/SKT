@@ -54,6 +54,7 @@ func connect_skt_tree_signals() -> void:
 		func(follow_point):
 			selected_control = follow_point
 	)
+	print("Goobers")
 	
 @warning_ignore("unused_signal")
 signal request_refresh_screen

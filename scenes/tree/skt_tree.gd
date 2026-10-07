@@ -146,3 +146,7 @@ signal node_moved(node: SkillNode)
 
 @warning_ignore("unused_signal")
 signal followpoint_moved(follow_point: BranchFollowPoint)
+
+
+func _gui_input(event: InputEvent) -> void:
+	print("gibers")

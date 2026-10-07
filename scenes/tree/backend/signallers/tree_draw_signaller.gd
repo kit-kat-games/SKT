@@ -24,7 +24,7 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	if not _can_draw:
 		return
-
+		
 	_timer += delta
 	if _timer >= draw_interval:
 		_timer = 0.0

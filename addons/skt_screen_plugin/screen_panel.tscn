@@ -25,7 +25,7 @@ grow_vertical = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 script = ExtResource("1_c3she")
-tree = NodePath("VBoxContainer/SubViewportContainer/SubViewport/Camera2D/TreeParent/SKT_Tree")
+tree = NodePath("VBoxContainer/SubViewportContainer/SubViewport/TreeParent/SKT_Tree")
 camera = NodePath("VBoxContainer/SubViewportContainer/SubViewport/Camera2D")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=963681359]
@@ -81,7 +81,7 @@ custom_minimum_size = Vector2(120, 50)
 layout_mode = 2
 script = ExtResource("6_rvwvp")
 panel = NodePath("../../../..")
-tree = NodePath("../../../SubViewportContainer/SubViewport/Camera2D/TreeParent/SKT_Tree")
+tree = NodePath("../../../SubViewportContainer/SubViewport/TreeParent/SKT_Tree")
 label_text = "Load Savedata"
 
 [node name="Button[RefreshSKT]" parent="VBoxContainer/PanelContainer/Toolbar" unique_id=773443566 node_paths=PackedStringArray("panel") instance=ExtResource("2_uunx3")]
@@ -100,6 +100,24 @@ handle_input_locally = false
 size = Vector2i(1152, 594)
 render_target_update_mode = 4
 
+[node name="TreeParent" type="Control" parent="VBoxContainer/SubViewportContainer/SubViewport" unique_id=480962357 node_paths=PackedStringArray("panel", "tree")]
+layout_mode = 3
+anchors_preset = 0
+offset_top = 54.0
+offset_right = 1152.0
+offset_bottom = 54.0
+script = ExtResource("10_palsw")
+panel = NodePath("../../../..")
+tree = NodePath("SKT_Tree")
+
+[node name="SKT_Tree" parent="VBoxContainer/SubViewportContainer/SubViewport/TreeParent" unique_id=1804999714 instance=ExtResource("11_85dnh")]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
 [node name="Camera2D" type="Camera2D" parent="VBoxContainer/SubViewportContainer/SubViewport" unique_id=268330035 node_paths=PackedStringArray("viewport")]
 position = Vector2(0, 54)
 limit_left = 0
@@ -108,21 +126,6 @@ limit_right = 1152
 limit_bottom = 648
 script = ExtResource("12_tqfy7")
 viewport = NodePath("..")
-
-[node name="TreeParent" type="Control" parent="VBoxContainer/SubViewportContainer/SubViewport/Camera2D" unique_id=480962357 node_paths=PackedStringArray("panel", "tree")]
-layout_mode = 3
-anchors_preset = 0
-size_flags_horizontal = 0
-size_flags_vertical = 0
-script = ExtResource("10_palsw")
-panel = NodePath("../../../../..")
-tree = NodePath("SKT_Tree")
-
-[node name="SKT_Tree" parent="VBoxContainer/SubViewportContainer/SubViewport/Camera2D/TreeParent" unique_id=1804999714 instance=ExtResource("11_85dnh")]
-layout_mode = 0
-offset_bottom = 594.0
-grow_horizontal = 2
-grow_vertical = 2
 
 [node name="MarginContainer" type="MarginContainer" parent="." unique_id=459030551]
 layout_mode = 1
@@ -143,6 +146,6 @@ layout_mode = 2
 
 [node name="SkillDisplay" parent="MarginContainer/PanelContainer" unique_id=268168858 node_paths=PackedStringArray("tree") instance=ExtResource("11_palsw")]
 layout_mode = 2
-tree = NodePath("../../../VBoxContainer/SubViewportContainer/SubViewport/Camera2D/TreeParent/SKT_Tree")
+tree = NodePath("../../../VBoxContainer/SubViewportContainer/SubViewport/TreeParent/SKT_Tree")
 
 [connection signal="gui_input" from="." to="VBoxContainer/SubViewportContainer/SubViewport/Camera2D" method="_on_gui_input"]

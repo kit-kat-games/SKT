@@ -1,38 +1,40 @@
-[gd_scene format=3 uid="uid://b2f11wyd6ktkd"]
+[gd_scene format=3 uid="uid://oiisr2nfqvg7"]
 
-[ext_resource type="Script" uid="uid://dipcb2brefb6h" path="res://scenes/tree/skt_tree.gd" id="1_npg3l"]
-[ext_resource type="Script" uid="uid://bnncr2gjqhu7a" path="res://scenes/tree/signallers.gd" id="2_dgnwy"]
-[ext_resource type="Script" uid="uid://cp4tbc5s4n01r" path="res://scenes/tree/backend/signallers/tree_update_signaller.gd" id="3_l375e"]
-[ext_resource type="Script" uid="uid://1g82k72wjre3" path="res://scenes/tree/backend/signallers/tree_draw_signaller.gd" id="4_jltvb"]
-[ext_resource type="Script" uid="uid://ce847361rpxdp" path="res://scenes/tree/backend/signallers/setup_signaller.gd" id="5_eccx0"]
-[ext_resource type="Script" uid="uid://bob8jmk1s1utb" path="res://scenes/tree/checkers.gd" id="6_q5pgo"]
-[ext_resource type="Script" uid="uid://dq8vlt6sfhyqi" path="res://scenes/tree/backend/checkers/can_progress_checker.gd" id="7_46td4"]
-[ext_resource type="Script" uid="uid://de2i4ovdfr63y" path="res://scenes/tree/backend/checkers/can_regress_checker.gd" id="8_xmd5y"]
-[ext_resource type="Script" uid="uid://bd08nyy4syilo" path="res://scenes/tree/backend/skill_progressor.gd" id="9_6ssp0"]
-[ext_resource type="Script" uid="uid://cnbkckh2vymi7" path="res://scenes/tree/backend/skill_regressor.gd" id="10_ou0bc"]
-[ext_resource type="Script" uid="uid://di5gn26keyqyy" path="res://scenes/tree/display_nodes/branch_positioner_specific.gd" id="12_wewtc"]
-[ext_resource type="Script" uid="uid://2ipl0k81cush" path="res://scenes/tree/display_nodes/node_formatter_specific.gd" id="13_q43c6"]
-[ext_resource type="Script" uid="uid://cyvadje8oj8nt" path="res://scenes/tree/display_nodes/branch_formatter_specific.gd" id="14_o6jxl"]
-[ext_resource type="Script" uid="uid://h1wqttinaulb" path="res://scenes/tree/frontend/spawner.gd" id="15_237i2"]
-[ext_resource type="Script" uid="uid://boulnnblpmnhn" path="res://scenes/tree/frontend/tree_resetter.gd" id="16_f17o2"]
-[ext_resource type="Script" uid="uid://dhb4u5muqo1jg" path="res://scenes/tree/frontend/save_loader.gd" id="17_5ilvm"]
-[ext_resource type="Script" uid="uid://ovpt5ta7n7js" path="res://scenes/tree/frontend/progression_tier_manager.gd" id="18_77lgq"]
-[ext_resource type="Script" uid="uid://ciejkvurtwutk" path="res://scenes/tree/frontend/upgrade_cost_manager.gd" id="19_ydp36"]
-[ext_resource type="Script" uid="uid://ctnnxm2o7xl2f" path="res://scenes/tree/frontend/grid_node_locker.gd" id="20_23p22"]
-[ext_resource type="Script" uid="uid://cao4xy0vsnqcj" path="res://scenes/tree/parents/branches.gd" id="21_dnm1g"]
-[ext_resource type="Script" uid="uid://5h763uj07lx4" path="res://scenes/tree/parents/nodes.gd" id="26_vgi5s"]
-[ext_resource type="PackedScene" uid="uid://2ud8xhsds1xu" path="res://scenes/tree_controls/skill_node.tscn" id="27_2y5q3"]
-[ext_resource type="Script" uid="uid://sglhomue6ugh" path="res://scenes/tree_controls/skill_node.gd" id="28_m3vmx"]
-[ext_resource type="Script" uid="uid://cqgrxah6r3jfh" path="res://data/skill_data/skill_data.gd" id="29_hepaa"]
+[ext_resource type="Script" uid="uid://dipcb2brefb6h" path="res://scenes/tree/skt_tree.gd" id="1_2rknx"]
+[ext_resource type="Script" uid="uid://bnncr2gjqhu7a" path="res://scenes/tree/signallers.gd" id="2_jxg1d"]
+[ext_resource type="Script" uid="uid://cp4tbc5s4n01r" path="res://scenes/tree/backend/signallers/tree_update_signaller.gd" id="3_rxc06"]
+[ext_resource type="Script" uid="uid://1g82k72wjre3" path="res://scenes/tree/backend/signallers/tree_draw_signaller.gd" id="4_hi1s5"]
+[ext_resource type="Script" uid="uid://ce847361rpxdp" path="res://scenes/tree/backend/signallers/setup_signaller.gd" id="5_86nwy"]
+[ext_resource type="Script" uid="uid://bob8jmk1s1utb" path="res://scenes/tree/checkers.gd" id="6_y43jc"]
+[ext_resource type="Script" uid="uid://dq8vlt6sfhyqi" path="res://scenes/tree/backend/checkers/can_progress_checker.gd" id="7_7osbv"]
+[ext_resource type="Script" uid="uid://de2i4ovdfr63y" path="res://scenes/tree/backend/checkers/can_regress_checker.gd" id="8_4p2to"]
+[ext_resource type="Script" uid="uid://bd08nyy4syilo" path="res://scenes/tree/backend/skill_progressor.gd" id="9_616ti"]
+[ext_resource type="Script" uid="uid://cnbkckh2vymi7" path="res://scenes/tree/backend/skill_regressor.gd" id="10_p7fk8"]
+[ext_resource type="Script" uid="uid://di5gn26keyqyy" path="res://scenes/tree/display_nodes/branch_positioner_specific.gd" id="11_efvlo"]
+[ext_resource type="Script" uid="uid://2ipl0k81cush" path="res://scenes/tree/display_nodes/node_formatter_specific.gd" id="12_h7oir"]
+[ext_resource type="Script" uid="uid://cyvadje8oj8nt" path="res://scenes/tree/display_nodes/branch_formatter_specific.gd" id="13_qy462"]
+[ext_resource type="Script" uid="uid://h1wqttinaulb" path="res://scenes/tree/frontend/spawner.gd" id="14_75rs0"]
+[ext_resource type="Script" uid="uid://boulnnblpmnhn" path="res://scenes/tree/frontend/tree_resetter.gd" id="15_grcgd"]
+[ext_resource type="Script" uid="uid://dhb4u5muqo1jg" path="res://scenes/tree/frontend/save_loader.gd" id="16_ko8wx"]
+[ext_resource type="Script" uid="uid://ovpt5ta7n7js" path="res://scenes/tree/frontend/progression_tier_manager.gd" id="17_kt0k0"]
+[ext_resource type="Script" uid="uid://ciejkvurtwutk" path="res://scenes/tree/frontend/upgrade_cost_manager.gd" id="18_4pjec"]
+[ext_resource type="Script" uid="uid://ctnnxm2o7xl2f" path="res://scenes/tree/frontend/grid_node_locker.gd" id="19_8jjv8"]
+[ext_resource type="Script" uid="uid://cao4xy0vsnqcj" path="res://scenes/tree/parents/branches.gd" id="20_xnp26"]
+[ext_resource type="PackedScene" uid="uid://d70eulefynr3" path="res://scenes/tree_controls/skill_branch.tscn" id="21_e80fr"]
+[ext_resource type="Script" uid="uid://damuwhacrr1ro" path="res://scenes/tree_controls/skill_branch.gd" id="22_bxk5l"]
+[ext_resource type="PackedScene" uid="uid://2ud8xhsds1xu" path="res://scenes/tree_controls/skill_node.tscn" id="22_jxg1d"]
+[ext_resource type="Script" uid="uid://sglhomue6ugh" path="res://scenes/tree_controls/skill_node.gd" id="23_rxc06"]
+[ext_resource type="Script" uid="uid://5h763uj07lx4" path="res://scenes/tree/parents/nodes.gd" id="23_vlqxp"]
+[ext_resource type="Script" uid="uid://cqgrxah6r3jfh" path="res://data/skill_data/skill_data.gd" id="24_hi1s5"]
 
 [sub_resource type="Resource" id="Resource_q8pos"]
 resource_local_to_scene = true
-script = ExtResource("29_hepaa")
+script = ExtResource("24_hi1s5")
 
 [node name="SKT_Tree" type="Control" unique_id=1804999714 node_paths=PackedStringArray("tree_update_signaller", "tree_draw_signaller", "spawner", "progression_tier_manager", "upgrade_cost_manager", "grid_node_locker", "nodes_parent", "branches_parent")]
 layout_mode = 3
 anchors_preset = 0
-script = ExtResource("1_npg3l")
+script = ExtResource("1_2rknx")
 tree_update_signaller = NodePath("Backend/Signallers/TreeUpdateSignaller")
 tree_draw_signaller = NodePath("Backend/Signallers/TreeDrawSignaller")
 spawner = NodePath("Frontend/Spawner")
@@ -45,81 +47,83 @@ branches_parent = NodePath("Parents/Branches")
 [node name="Backend" type="Node" parent="." unique_id=2115853463]
 
 [node name="Signallers" type="Node" parent="Backend" unique_id=1226947947]
-script = ExtResource("2_dgnwy")
+script = ExtResource("2_jxg1d")
 
 [node name="TreeUpdateSignaller" type="Node" parent="Backend/Signallers" unique_id=1140819954 node_paths=PackedStringArray("tree")]
-script = ExtResource("3_l375e")
+script = ExtResource("3_rxc06")
+_can_update = false
 tree = NodePath("../../..")
 
 [node name="TreeDrawSignaller" type="Node" parent="Backend/Signallers" unique_id=137309458 node_paths=PackedStringArray("tree")]
-script = ExtResource("4_jltvb")
+script = ExtResource("4_hi1s5")
+_can_draw = false
 tree = NodePath("../../..")
 
 [node name="SetupSignaller" type="Node" parent="Backend/Signallers" unique_id=2136143581 node_paths=PackedStringArray("tree")]
-script = ExtResource("5_eccx0")
+script = ExtResource("5_86nwy")
 tree = NodePath("../../..")
 
 [node name="Checkers" type="Node" parent="Backend" unique_id=1669573428]
-script = ExtResource("6_q5pgo")
+script = ExtResource("6_y43jc")
 
 [node name="CanProgressChecker" type="Node" parent="Backend/Checkers" unique_id=1877385060 node_paths=PackedStringArray("tree")]
-script = ExtResource("7_46td4")
+script = ExtResource("7_7osbv")
 tree = NodePath("../../..")
 
 [node name="CanRegressChecker" type="Node" parent="Backend/Checkers" unique_id=1543290528 node_paths=PackedStringArray("tree")]
-script = ExtResource("8_xmd5y")
+script = ExtResource("8_4p2to")
 tree = NodePath("../../..")
 
 [node name="SkillProgressor" type="Node" parent="Backend" unique_id=235456436 node_paths=PackedStringArray("tree")]
-script = ExtResource("9_6ssp0")
+script = ExtResource("9_616ti")
 tree = NodePath("../..")
 
 [node name="SkillRegressor" type="Node" parent="Backend" unique_id=594550144 node_paths=PackedStringArray("tree")]
-script = ExtResource("10_ou0bc")
+script = ExtResource("10_p7fk8")
 tree = NodePath("../..")
 
 [node name="DisplayNodes" type="Node" parent="." unique_id=1621006293]
 
 [node name="BranchPositioner[Specific]" type="Node" parent="DisplayNodes" unique_id=1884917214 node_paths=PackedStringArray("tree")]
-script = ExtResource("12_wewtc")
+script = ExtResource("11_efvlo")
 tree = NodePath("../..")
 
 [node name="NodeFormatter[Specific]" type="Node" parent="DisplayNodes" unique_id=1925427688 node_paths=PackedStringArray("tree")]
-script = ExtResource("13_q43c6")
+script = ExtResource("12_h7oir")
 tree = NodePath("../..")
 
 [node name="BranchFormatter[Specific]" type="Node" parent="DisplayNodes" unique_id=348121967 node_paths=PackedStringArray("tree")]
-script = ExtResource("14_o6jxl")
+script = ExtResource("13_qy462")
 tree = NodePath("../..")
 
 [node name="Frontend" type="Node" parent="." unique_id=558274320]
 
 [node name="Spawner" type="Node" parent="Frontend" unique_id=1732001445 node_paths=PackedStringArray("tree")]
-script = ExtResource("15_237i2")
+script = ExtResource("14_75rs0")
 tree = NodePath("../..")
 
 [node name="TreeResetter" type="Node" parent="Frontend" unique_id=1933022791 node_paths=PackedStringArray("tree")]
-script = ExtResource("16_f17o2")
+script = ExtResource("15_grcgd")
 tree = NodePath("../..")
 
 [node name="SaveLoader" type="Node" parent="Frontend" unique_id=903098706 node_paths=PackedStringArray("tree")]
-script = ExtResource("17_5ilvm")
+script = ExtResource("16_ko8wx")
 tree = NodePath("../..")
 
 [node name="ProgressionTierManager" type="Node" parent="Frontend" unique_id=1693871688 node_paths=PackedStringArray("tree")]
-script = ExtResource("18_77lgq")
+script = ExtResource("17_kt0k0")
 use_progression_tiers = true
 tiers = Array[Array]([Array[NodePath]([NodePath("Tier 0"), NodePath("/root/@EditorNode@19513/@Panel@14/@VBoxContainer@15/DockVSplitMain/DockHSplitMain/@VBoxContainer@37/DockVSplitCenter/@VSplitContainer@101/@VBoxContainer@102/@EditorMainScreen@160/MainScreen/@CanvasItemEditor@10138/@VSplitContainer@9897/@HSplitContainer@9899/@HSplitContainer@9901/@Control@9902/@SubViewportContainer@9903/@SubViewport@9904/SKT_Tree/Parents/Nodes/SkillNode1")])])
 current_tier = 3
 tree = NodePath("../..")
 
 [node name="UpgradeCostManager" type="Node" parent="Frontend" unique_id=121578001]
-script = ExtResource("19_ydp36")
+script = ExtResource("18_4pjec")
 upgrade_type = 1
 current_sp = 113
 
 [node name="GridNodeLocker" type="Node" parent="Frontend" unique_id=1551547060 node_paths=PackedStringArray("tree")]
-script = ExtResource("20_23p22")
+script = ExtResource("19_8jjv8")
 grid_cell_size = 20
 tree = NodePath("../..")
 
@@ -130,25 +134,34 @@ anchors_preset = 0
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
-script = ExtResource("21_dnm1g")
+script = ExtResource("20_xnp26")
 tree = NodePath("../..")
 metadata/_custom_type_script = "uid://cao4xy0vsnqcj"
+
+[node name="SkillBranch1" type="Control" parent="Parents/Branches" unique_id=704870078 node_paths=PackedStringArray("node_arc", "shader_arc", "arrow", "shader_arrow") instance=ExtResource("21_e80fr")]
+z_index = -1
+anchors_preset = 0
+script = ExtResource("22_bxk5l")
+node_arc = NodePath("NodeArc")
+shader_arc = NodePath("NodeArc/ShaderArc")
+arrow = NodePath("Arrow")
+shader_arrow = NodePath("Arrow/ShaderArrow")
 
 [node name="Nodes" type="Control" parent="Parents" unique_id=776948668 node_paths=PackedStringArray("tree")]
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
-script = ExtResource("26_vgi5s")
+script = ExtResource("23_vlqxp")
 tree = NodePath("../..")
 metadata/_custom_type_script = "uid://5h763uj07lx4"
 
-[node name="SkillNode1" type="Control" parent="Parents/Nodes" unique_id=1253674025 node_paths=PackedStringArray("orb", "shader_orb") instance=ExtResource("27_2y5q3")]
+[node name="SkillNode1" type="Control" parent="Parents/Nodes" unique_id=1253674025 node_paths=PackedStringArray("orb", "shader_orb") instance=ExtResource("22_jxg1d")]
 anchors_preset = 0
 offset_left = -12.0
 offset_top = -12.0
 offset_right = 12.0
 offset_bottom = 12.0
-script = ExtResource("28_m3vmx")
+script = ExtResource("23_rxc06")
 skill_data = SubResource("Resource_q8pos")
 orb = NodePath("NodeOrb")
 shader_orb = NodePath("NodeOrb/ShaderOrb")

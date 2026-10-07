@@ -23,7 +23,7 @@ window/stretch/aspect="expand"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/global_addon_manager/plugin.cfg", "res://addons/kanban_tasks/plugin.cfg", "res://addons/project_health_scanner/plugin.cfg", "res://addons/skt_screen_plugin/plugin.cfg", "res://addons/skt_skill_selector_plugin/plugin.cfg")
+enabled=PackedStringArray("res://addons/global_addon_manager/plugin.cfg", "res://addons/kanban_tasks/plugin.cfg", "res://addons/project_health_scanner/plugin.cfg", "res://addons/skt_screen_plugin/plugin.cfg")
 
 [physics]
 
